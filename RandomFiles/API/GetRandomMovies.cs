@@ -13,7 +13,7 @@ namespace RandomFiles.API
             string[] filePaths = Directory.GetFiles(path, "*.mp4");
             return filePaths;
         }
-
+        //For diagnostic purposes.
         public void LogMovies()
         {
             string[] mp4s = GetMp4s();
@@ -36,7 +36,7 @@ namespace RandomFiles.API
 
             return randomFile;
         }
-
+        //For diagnostic purposes.
         public void LogRandomMovie(string randomMovie)
         {
             Console.WriteLine(randomMovie);
