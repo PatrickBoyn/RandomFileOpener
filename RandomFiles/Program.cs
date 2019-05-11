@@ -7,6 +7,8 @@ namespace RandomFiles
     {
         static void Main(string[] args)
         {
+            var fileLauncher = new LaunchFiles();
+            fileLauncher.PlayMovies();
 
             Console.ReadKey();
         }
