@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\GetRandomMovies.cs" />
     <Compile Include="Migrations\201905110422383_InitialModel.cs" />
     <Compile Include="Migrations\201905110422383_InitialModel.Designer.cs">
       <DependentUpon>201905110422383_InitialModel.cs</DependentUpon>
