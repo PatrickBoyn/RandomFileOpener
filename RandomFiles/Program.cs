@@ -7,6 +7,9 @@ namespace RandomFiles
     {
         static void Main(string[] args)
         {
+            var getMovies = new GetRandomMovies();
+
+            getMovies.LogMovies();
 
             Console.ReadKey();
         }
