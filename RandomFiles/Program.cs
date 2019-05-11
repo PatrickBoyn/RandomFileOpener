@@ -7,10 +7,9 @@ namespace RandomFiles
     {
         static void Main(string[] args)
         {
-            var getMovies = new GetRandomMovies();
-            string getRandomMovie = getMovies.GetRandomMovie();
+            var fileLauncher = new LaunchFiles();
 
-            Console.WriteLine(getRandomMovie);
+            fileLauncher.PlayMovies();
 
             Console.ReadKey();
         }
