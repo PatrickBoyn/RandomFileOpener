@@ -14,6 +14,11 @@ namespace RandomFiles.API
             return filePaths;
         }
 
+        public void LogMovies()
+        {
+
+        }
+
         //Gets a random movie from the list created above.
         public string GetRandomMovie()
         {
