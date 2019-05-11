@@ -7,7 +7,7 @@ namespace RandomFiles.API
     {
         public string[] GetMp4s()
         {
-            string path = @"C:\Users\dakil\Desktop\MiscFiles\Extras\";
+            const string path = @"C:\Users\dakil\Desktop\MiscFiles\Extras\";
             string[] filePaths = Directory.GetFiles(path, "*.mp4");
             return filePaths;
         }
