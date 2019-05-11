@@ -54,6 +54,10 @@
     <Compile Include="Migrations\201905110422383_InitialModel.Designer.cs">
       <DependentUpon>201905110422383_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905110430341_AddRandomGamesTable.cs" />
+    <Compile Include="Migrations\201905110430341_AddRandomGamesTable.Designer.cs">
+      <DependentUpon>201905110430341_AddRandomGamesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\RandomFilesContext.cs" />
     <Compile Include="Models\RandomGame.cs" />
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905110422383_InitialModel.resx">
       <DependentUpon>201905110422383_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905110430341_AddRandomGamesTable.resx">
+      <DependentUpon>201905110430341_AddRandomGamesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
