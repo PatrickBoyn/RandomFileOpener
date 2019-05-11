@@ -12,13 +12,15 @@ namespace RandomFiles.API
             return filePaths;
         }
 
+        //Gets a random movie from the list created above.
         public string GetRandomMovie()
         {
             var rand = new Random();
+            string[] getMovieList = GetMp4s();
 
-            int length = GetMp4s().Length;
+            int length = getMovieList.Length;
             int randomIndex = rand.Next(0, length);
-            string randomFile = GetMp4s()[randomIndex];
+            string randomFile = getMovieList[randomIndex];
 
             return randomFile;
         }
