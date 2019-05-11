@@ -11,5 +11,10 @@ namespace RandomFiles.API
             string[] filePaths = Directory.GetFiles(path, "*.mp4");
             return filePaths;
         }
+
+        public string GetRandomMovie()
+        {
+            return "Hello World!";
+        }
     }
 }
