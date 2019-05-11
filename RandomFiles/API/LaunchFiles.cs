@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace RandomFiles.API
 {
     class LaunchFiles
     {
+        public void PlayMovies()
+        {
+            var getMovies = new GetRandomMovies();
+            Process.Start(getMovies.GetRandomMovie());
+        }
     }
 }
