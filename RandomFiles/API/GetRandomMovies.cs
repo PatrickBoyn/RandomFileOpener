@@ -36,5 +36,9 @@ namespace RandomFiles.API
 
             return randomFile;
         }
+
+        public void LogRandomMovie()
+        {
+        }
     }
 }
