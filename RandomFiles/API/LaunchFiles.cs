@@ -8,6 +8,7 @@ namespace RandomFiles.API
         {
             var getMovies = new GetRandomMovies();
             Process.Start(getMovies.GetRandomMovie());
+            getMovies.LogRandomMovie();
         }
     }
 }
