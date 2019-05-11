@@ -1,4 +1,5 @@
-﻿using RandomFiles.API;
+﻿using System;
+using RandomFiles.API;
 
 namespace RandomFiles
 {
@@ -7,6 +8,14 @@ namespace RandomFiles
         static void Main(string[] args)
         {
             var getMovies = new GetRandomMovies();
+            string[] listMovies = getMovies.GetMp4s();
+
+            foreach (var movie in listMovies)
+            {
+                Console.WriteLine(movie);
+            }
+
+            Console.ReadKey();
         }
     }
 }
