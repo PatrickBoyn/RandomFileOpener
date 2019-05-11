@@ -16,7 +16,12 @@ namespace RandomFiles.API
 
         public void LogMovies()
         {
+            string[] mp4s = GetMp4s();
 
+            foreach (string mp4 in mp4s)
+            {
+                Console.WriteLine(mp4);
+            }
         }
 
         //Gets a random movie from the list created above.
