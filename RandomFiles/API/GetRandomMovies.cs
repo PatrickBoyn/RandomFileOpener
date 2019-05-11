@@ -39,6 +39,7 @@ namespace RandomFiles.API
 
         public void LogRandomMovie()
         {
+            Console.WriteLine(GetRandomMovie());
         }
     }
 }
