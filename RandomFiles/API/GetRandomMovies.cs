@@ -14,7 +14,13 @@ namespace RandomFiles.API
 
         public string GetRandomMovie()
         {
-            return "Hello World!";
+            var rand = new Random();
+
+            int length = GetMp4s().Length;
+            int randomIndex = rand.Next(0, length);
+            string randomFile = GetMp4s()[randomIndex];
+
+            return randomFile;
         }
     }
 }
