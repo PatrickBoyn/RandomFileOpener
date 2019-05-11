@@ -1,6 +1,9 @@
-﻿namespace RandomFiles.Models
+﻿using System.Data.Entity;
+
+namespace RandomFiles.Models
 {
-    class RandomFilesContext
+    class RandomFilesContext : DbContext
     {
+        public DbSet<RandomVideo> RandomVideos { get; set; }
     }
 }
