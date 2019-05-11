@@ -10,6 +10,8 @@ namespace RandomFiles
             var getMovies = new GetRandomMovies();
 
             getMovies.LogMovies();
+            Console.WriteLine("*************************");
+            getMovies.LogRandomMovie();
 
             Console.ReadKey();
         }
