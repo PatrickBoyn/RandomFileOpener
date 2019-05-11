@@ -7,7 +7,7 @@ namespace RandomFiles.API
     {
 
         //Ignore the comment about the name.
-        public string[] GetMp4s()
+        protected string[] GetMp4s()
         {
             const string path = @"C:\Users\dakil\Desktop\MiscFiles\Extras\";
             string[] filePaths = Directory.GetFiles(path, "*.mp4");
@@ -25,7 +25,7 @@ namespace RandomFiles.API
         }
 
         //Gets a random movie from the list created above.
-        public string GetRandomMovie()
+        protected string GetRandomMovie()
         {
             var rand = new Random();
             string[] getMovieList = GetMp4s();
