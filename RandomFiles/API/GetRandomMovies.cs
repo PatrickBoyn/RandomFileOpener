@@ -37,9 +37,9 @@ namespace RandomFiles.API
             return randomFile;
         }
 
-        public void LogRandomMovie(GetRandomMovies randomMovies)
+        public void LogRandomMovie(string randomMovie)
         {
-            Console.WriteLine(randomMovies);
+            Console.WriteLine(randomMovie);
         }
     }
 }
