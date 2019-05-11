@@ -64,6 +64,10 @@
     <Compile Include="Migrations\201905110612502_AddTimesPlayedColumn.Designer.cs">
       <DependentUpon>201905110612502_AddTimesPlayedColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905112148279_AddMaxLengthAndChangedTableName.cs" />
+    <Compile Include="Migrations\201905112148279_AddMaxLengthAndChangedTableName.Designer.cs">
+      <DependentUpon>201905112148279_AddMaxLengthAndChangedTableName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\RandomFilesContext.cs" />
     <Compile Include="Models\RandomGame.cs" />
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905110612502_AddTimesPlayedColumn.resx">
       <DependentUpon>201905110612502_AddTimesPlayedColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905112148279_AddMaxLengthAndChangedTableName.resx">
+      <DependentUpon>201905112148279_AddMaxLengthAndChangedTableName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
