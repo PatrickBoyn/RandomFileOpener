@@ -8,7 +8,7 @@ namespace RandomFiles.API
         private readonly string _path;
         private readonly string _type;
 
-        public GetRandomFiles(string path, string type)
+        public GetRandomFiles(string path= @"C:\Users\dakil\Desktop\MiscFiles\Extras", string type="*.mp4")
         {
             _path = path;
             _type = type;
@@ -19,16 +19,6 @@ namespace RandomFiles.API
             string path = _path;
             string[] filePaths = Directory.GetFiles(_path, _type);
             return filePaths;
-        }
-        //For diagnostic purposes.
-        public void LogMovies()
-        {
-            string[] mp4s = GetFiles();
-
-            foreach (string mp4 in mp4s)
-            {
-                Console.WriteLine(mp4);
-            }
         }
 
         //Gets a random movie from the list created above.
@@ -42,11 +32,6 @@ namespace RandomFiles.API
             string randomFile = getMovieList[randomIndex];
 
             return randomFile;
-        }
-        //For diagnostic purposes.
-        public void LogRandomMovie(string randomMovie)
-        {
-            Console.WriteLine(randomMovie);
         }
     }
 }
