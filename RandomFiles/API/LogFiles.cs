@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace RandomFiles.API
 {
@@ -9,6 +10,8 @@ namespace RandomFiles.API
         {
             var getFiles = new GetRandomFiles();
             string[] files = getFiles.GetFiles();
+
+            files.OrderBy(x => x);
 
             foreach (string file in files)
             {
