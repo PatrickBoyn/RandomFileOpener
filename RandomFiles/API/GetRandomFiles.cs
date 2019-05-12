@@ -14,7 +14,6 @@ namespace RandomFiles.API
             _type = type;
         }
 
-        //Ignore the comment about the name.
         public string[] GetFiles()
         {
             string path = _path;
