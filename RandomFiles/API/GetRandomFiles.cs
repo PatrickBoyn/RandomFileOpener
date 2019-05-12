@@ -24,7 +24,7 @@ namespace RandomFiles.API
         //For diagnostic purposes.
         public void LogMovies()
         {
-            var getMovies = new GetRandomFiles(@"C:\Users\dakil\Desktop\MiscFiles\Extras\", "*.mp4");
+            var getMovies = new GetRandomFiles(_path, _type);
 
             string[] mp4s = getMovies.GetFiles();
 
