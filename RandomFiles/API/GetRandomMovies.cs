@@ -16,7 +16,9 @@ namespace RandomFiles.API
         //For diagnostic purposes.
         public void LogMovies()
         {
-            string[] mp4s = GetMp4s();
+            var getMovies = new GetRandomMovies();
+
+            string[] mp4s = getMovies.GetMp4s();
 
             foreach (string mp4 in mp4s)
             {
