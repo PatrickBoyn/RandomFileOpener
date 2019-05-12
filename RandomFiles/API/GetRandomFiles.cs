@@ -18,15 +18,13 @@ namespace RandomFiles.API
         public string[] GetFiles()
         {
             string path = _path;
-            string[] filePaths = Directory.GetFiles(path, _type);
+            string[] filePaths = Directory.GetFiles(_path, _type);
             return filePaths;
         }
         //For diagnostic purposes.
         public void LogMovies()
         {
-            var getMovies = new GetRandomFiles(_path, _type);
-
-            string[] mp4s = getMovies.GetFiles();
+            string[] mp4s = GetFiles();
 
             foreach (string mp4 in mp4s)
             {
