@@ -6,7 +6,7 @@ namespace RandomFiles.API
     {
         public void PlayMovies()
         {
-            var getMovies = new GetRandomMovies();
+            var getMovies = new GetRandomFiles(@"C:\Users\dakil\Desktop\MiscFiles\Extras", "*.mp4");
 
             string randomMovie = getMovies.GetRandomMovie();
 

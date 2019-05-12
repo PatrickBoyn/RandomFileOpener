@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API\GetRandomMovies.cs" />
+    <Compile Include="API\GetRandomFiles.cs" />
     <Compile Include="API\LaunchFiles.cs" />
     <Compile Include="Migrations\201905110422383_InitialModel.cs" />
     <Compile Include="Migrations\201905110422383_InitialModel.Designer.cs">
