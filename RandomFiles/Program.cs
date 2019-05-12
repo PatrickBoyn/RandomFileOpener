@@ -10,6 +10,7 @@ namespace RandomFiles
             var fileLauncher = new LaunchFiles();
             fileLauncher.PlayMovies();
 
+            LogFiles.LogMovies();
             Console.ReadKey();
         }
     }
