@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="API\GetRandomFiles.cs" />
     <Compile Include="API\LaunchFiles.cs" />
+    <Compile Include="API\LogFiles.cs" />
     <Compile Include="Migrations\201905110422383_InitialModel.cs" />
     <Compile Include="Migrations\201905110422383_InitialModel.Designer.cs">
       <DependentUpon>201905110422383_InitialModel.cs</DependentUpon>
