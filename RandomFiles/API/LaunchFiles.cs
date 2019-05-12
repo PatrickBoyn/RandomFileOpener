@@ -2,15 +2,16 @@
 
 namespace RandomFiles.API
 {
-    class LaunchFiles : GetRandomMovies
+    class LaunchFiles 
     {
         public void PlayMovies()
         {
+            var getMovies = new GetRandomMovies();
 
-            string randomMovie = GetRandomMovie();
+            string randomMovie = getMovies.GetRandomMovie();
 
             Process.Start(randomMovie);
-            LogRandomMovie(randomMovie);
+            getMovies.LogRandomMovie(randomMovie);
         }
     }
 }
