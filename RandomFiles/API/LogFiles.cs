@@ -7,12 +7,12 @@ namespace RandomFiles.API
         //For diagnostic purposes.
         public static void LogMovies()
         {
-            var getMovies = new GetRandomFiles();
-            string[] mp4s = getMovies.GetFiles();
+            var getFiles = new GetRandomFiles();
+            string[] files = getFiles.GetFiles();
 
-            foreach (string mp4 in mp4s)
+            foreach (string file in files)
             {
-                Console.WriteLine(mp4);
+                Console.WriteLine(file);
             }
         }
 

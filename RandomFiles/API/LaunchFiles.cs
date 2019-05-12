@@ -6,9 +6,9 @@ namespace RandomFiles.API
     {
         public void PlayMovies()
         {
-            var getMovies = new GetRandomFiles();
+            var getFiles = new GetRandomFiles();
 
-            string randomMovie = getMovies.GetRandomMovie();
+            string randomMovie = getFiles.GetRandomMovie();
 
             Process.Start(randomMovie);
 
