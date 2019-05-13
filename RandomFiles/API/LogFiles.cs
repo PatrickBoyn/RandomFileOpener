@@ -9,9 +9,8 @@ namespace RandomFiles.API
         //For diagnostic purposes.
         public static void LogMovies()
         {
-            Random rand = new Random();
 
-            var getFiles = new GetRandomFiles(rand);
+            var getFiles = new GetRandomFiles();
             string[] files = getFiles.GetFiles();
             
             //Ignore the warning.
