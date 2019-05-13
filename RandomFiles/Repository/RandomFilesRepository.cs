@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 using System.Linq.Expressions;
-using System.Runtime.Remoting.Contexts;
 
 namespace RandomFiles.Repository
 {
@@ -16,12 +16,12 @@ namespace RandomFiles.Repository
         }
         public TEntity Get(int id)
         {
-            throw new NotImplementedException();
+            return _context.Set<TEntity>().Find(id);
         }
 
         public IEnumerable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<TEntity>().ToList();
         }
 
         public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
