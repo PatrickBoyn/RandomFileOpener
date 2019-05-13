@@ -41,7 +41,7 @@ namespace RandomFiles.Repository
 
         public void Remove(TEntity entity)
         {
-            throw new NotImplementedException();
+            _context.Set<TEntity>().Remove(entity);
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
