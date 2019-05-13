@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Linq;  
+using System.Linq;
+using System.Threading;
 
 namespace RandomFiles.API
 {
@@ -8,7 +9,9 @@ namespace RandomFiles.API
         //For diagnostic purposes.
         public static void LogMovies()
         {
-            var getFiles = new GetRandomFiles();
+            Random rand = new Random();
+
+            var getFiles = new GetRandomFiles(rand);
             string[] files = getFiles.GetFiles();
             
             //Ignore the warning.
