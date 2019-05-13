@@ -1,12 +1,14 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace RandomFiles.API
 {
     class LaunchFiles 
     {
+        Random rand = new Random();
         public void PlayMovies()
         {
-            var getFiles = new GetRandomFiles();
+            var getFiles = new GetRandomFiles(rand);
 
             string randomMovie = getFiles.GetRandomMovie();
 
