@@ -26,7 +26,7 @@ namespace RandomFiles.Repository
 
         public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _context.Set<TEntity>().Where(predicate);
         }
 
         public void Add(TEntity tEntity)
