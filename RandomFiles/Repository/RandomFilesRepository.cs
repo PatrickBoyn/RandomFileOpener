@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq.Expressions;
+using System.Runtime.Remoting.Contexts;
 
 namespace RandomFiles.Repository
 {
     class RandomFilesRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        public RandomFilesRepository()
+        private readonly DbContext _context;
+
+        public RandomFilesRepository(DbContext context)
         {
-            
+            _context = context;
         }
         public TEntity Get(int id)
         {
