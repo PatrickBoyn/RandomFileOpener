@@ -36,7 +36,7 @@ namespace RandomFiles.Repository
 
         public void AddRange(IEnumerable<TEntity> entities)
         {
-            throw new NotImplementedException();
+            _context.Set<TEntity>().AddRange(entities);
         }
 
         public void Remove(TEntity entity)
