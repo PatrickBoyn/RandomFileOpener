@@ -6,6 +6,10 @@ namespace RandomFiles.Repository
 {
     class RandomFilesRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
+        public RandomFilesRepository()
+        {
+            
+        }
         public TEntity Get(int id)
         {
             throw new NotImplementedException();
