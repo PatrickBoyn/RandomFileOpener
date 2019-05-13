@@ -5,11 +5,12 @@ namespace RandomFiles.API
 {
     class GetRandomFiles
     {
+        private readonly Random _randomNumber;
         private readonly string _path;
         private readonly string _type;
-        Random rand = new Random();
-        public GetRandomFiles(string path= @"C:\Users\dakil\Desktop\Extras", string type="*.mp4")
+        public GetRandomFiles(Random randomNumber, string path= @"C:\Users\dakil\Desktop\Extras", string type="*.mp4")
         {
+            _randomNumber = randomNumber;
             _path = path;
             _type = type;
         }
@@ -27,7 +28,7 @@ namespace RandomFiles.API
             string[] getMovieList = GetFiles();
 
             int length = getMovieList.Length;
-            int randomIndex = rand.Next(0, length);
+            int randomIndex = _randomNumber.Next(0, length + 1);
             string randomFile = getMovieList[randomIndex];
 
             return randomFile;
