@@ -28,7 +28,7 @@ namespace RandomFiles.API
             string[] getMovieList = GetFiles();
 
             int length = getMovieList.Length;
-            int randomIndex = _randomNumber.Next(0, length + 1);
+            int randomIndex = _randomNumber.Next(0, length);
             string randomFile = getMovieList[randomIndex];
 
             return randomFile;
