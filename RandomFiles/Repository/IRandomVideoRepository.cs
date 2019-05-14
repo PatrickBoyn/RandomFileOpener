@@ -1,6 +1,10 @@
-﻿namespace RandomFiles.Repository
+﻿using System.Collections.Generic;
+using RandomFiles.Models;
+
+namespace RandomFiles.Repository
 {
-    interface IRandomVideoRepository
+    interface IRandomVideoRepository : IRepository<RandomVideo>
     {
+        IEnumerable<RandomVideo> GetAllRandomVideos();
     }
 }
