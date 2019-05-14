@@ -2,7 +2,7 @@
 
 namespace RandomFiles.Models
 {
-    class RandomFilesContext : DbContext
+    public class RandomFilesContext : DbContext
     {
         public DbSet<RandomVideo> RandomVideos { get; set; }
         public DbSet<RandomGame> RandomGames { get; set; }

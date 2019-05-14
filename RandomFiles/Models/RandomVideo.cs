@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RandomFiles.Models
 {
-    class RandomVideo
+    public class RandomVideo
     {
         public int Id { get; set; }
         [MaxLength(255)]
