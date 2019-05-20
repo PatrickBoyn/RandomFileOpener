@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 
 namespace RandomFiles.API
@@ -18,17 +19,17 @@ namespace RandomFiles.API
 
             foreach (string file in files)
             {
-                Console.WriteLine(file);
+                Console.WriteLine(Path.GetFileName(file));
             }
 
-            Console.WriteLine("***********************");
+            Console.WriteLine("***************************************");
             Console.WriteLine($"Total number of videos: {files.Length}");
         }
 
         //For diagnostic purposes.
         public static void LogRandomMovie(string randomMovie)
         {
-            Console.WriteLine(randomMovie);
+            Console.WriteLine(Path.GetFileName(randomMovie));
         }
     }
 }
