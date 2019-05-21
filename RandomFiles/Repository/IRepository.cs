@@ -2,7 +2,7 @@
 
 namespace RandomFiles.Repository
 {
-    interface IRepository
+    interface IRepository<TEntity> where TEntity : class
     {
     }
 }
