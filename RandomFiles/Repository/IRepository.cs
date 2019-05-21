@@ -11,7 +11,7 @@ namespace RandomFiles.Repository
         IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
         void Add(TEntity entity);
         void AddAll(IEnumerable<TEntity> entities);
-        void Remove(TEntity entity);
+        void Remove(TEntity entity);        
         void RemoveAll(IEnumerable<TEntity> entities);
     }
 }
