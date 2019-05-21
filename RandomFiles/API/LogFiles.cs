@@ -19,7 +19,7 @@ namespace RandomFiles.API
 
             foreach (string file in files)
             {
-                Console.WriteLine(Path.GetFileName(file));
+                Console.WriteLine(Path.GetFileNameWithoutExtension(file));
             }
 
             Console.WriteLine("***************************************");
@@ -29,7 +29,7 @@ namespace RandomFiles.API
         //For diagnostic purposes.
         public static void LogRandomMovie(string randomMovie)
         {
-            Console.WriteLine(Path.GetFileName(randomMovie));
+            Console.WriteLine(Path.GetFileNameWithoutExtension(randomMovie));
         }
     }
 }
