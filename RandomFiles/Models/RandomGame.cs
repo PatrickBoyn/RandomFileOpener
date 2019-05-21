@@ -10,6 +10,8 @@ namespace RandomFiles.Models
         public string FullUrl { get; set; }
         [MaxLength(30)]
         public string GameName { get; set; }
+
+        public string GameDescription { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateLastAccessed { get; set; }
     }

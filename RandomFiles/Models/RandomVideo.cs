@@ -10,6 +10,8 @@ namespace RandomFiles.Models
         public string FullUrl { get; set; }
         [MaxLength(30)]
         public string VideoName { get; set; }
+
+        public string VideoDescription { get; set; }
         public int TimesPlayed { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateLastAccessed { get; set; }
