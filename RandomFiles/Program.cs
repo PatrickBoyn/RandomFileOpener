@@ -9,9 +9,9 @@ namespace RandomFiles
         {
             var fileLauncher = new LaunchFiles();
             fileLauncher.PlayMovies();
-            Console.WriteLine("**********************");
-            LogFiles.LogMovies();
-            Console.ReadKey();
+//            Console.WriteLine("**********************");
+//            LogFiles.LogMovies();
+//            Console.ReadKey();
         }
     }
 }

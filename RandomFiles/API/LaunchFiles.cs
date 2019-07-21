@@ -14,7 +14,7 @@ namespace RandomFiles.API
 
             Process.Start(randomMovie);
 
-            LogFiles.LogRandomMovie(randomMovie);
+           //LogFiles.LogRandomMovie(randomMovie);
         }
     }
 }
