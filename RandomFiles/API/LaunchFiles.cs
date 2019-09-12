@@ -3,9 +3,9 @@ using System.Diagnostics;
 
 namespace RandomFiles.API
 {
-    class LaunchFiles 
+    class LaunchFiles
     {
-        Random rand = new Random();
+        Random rand = new Random(2345);
         public void PlayMovies()
         {
             var getFiles = new GetRandomFiles(rand);
@@ -14,7 +14,7 @@ namespace RandomFiles.API
 
             Process.Start(randomMovie);
 
-           //LogFiles.LogRandomMovie(randomMovie);
+            //LogFiles.LogRandomMovie(randomMovie);
         }
     }
 }

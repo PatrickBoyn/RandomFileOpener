@@ -8,7 +8,7 @@ namespace RandomFiles.API
         private readonly Random _randomNumber;
         private readonly string _path;
         private readonly string _type;
-        public GetRandomFiles(Random randomNumber = null, string path= @"C:\Users\dakil\Desktop\Extras", string type="*.mp4")
+        public GetRandomFiles(Random randomNumber = null, string path = @"C:\Users\dakil\Desktop\Extras", string type = "*.mp4")
         {
             _randomNumber = randomNumber;
             _path = path;
